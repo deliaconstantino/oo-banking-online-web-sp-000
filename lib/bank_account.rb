@@ -9,12 +9,12 @@ class BankAccount
     self.status("open")
   end
 
-  def status(status)
-    @status = status
+  def status(s)
+    @status = s
   end
 
-  def balance(balance)
-    @balance = balance
+  def balance(b)
+    @balance = b
   end
 
 end
