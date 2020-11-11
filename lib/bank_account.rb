@@ -5,7 +5,6 @@ class BankAccount
 
   def initialize(name)
     @name = name
-    require 'pry'; binding.pry
     @balance = 1000
     @status = "open"
   end
