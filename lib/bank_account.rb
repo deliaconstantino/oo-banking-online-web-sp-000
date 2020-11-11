@@ -9,12 +9,6 @@ class BankAccount
     @status = "open"
   end
 
-  # def status(current_status)
-  #   @status = current_status
-  # end
-  #
-  # def balance=(current_balance)
-  #   @balance = current_balance
-  # end
+  
 
 end
