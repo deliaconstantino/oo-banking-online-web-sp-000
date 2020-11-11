@@ -5,12 +5,16 @@ class BankAccount
 
   def initialize(name)
     @name = name
-    @balance = 1000
+    self.balance(1000)
     self.status(open)
   end
 
   def status(status)
     @status = status
+  end
+
+  def balance(balance)
+    @balance = balance
   end
 
 end
