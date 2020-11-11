@@ -20,7 +20,7 @@ describe "BankAccount" do
     end
 
     it "can't change its name" do
-      expect { avi.name = "Bob" }.to raise_error
+      expect { avi.name = "Bob" }.to raise_error #<ArgumentError: wrong number of arguments (given 1, expected 0)>
     end
   end
 
