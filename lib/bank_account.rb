@@ -6,7 +6,7 @@ class BankAccount
   def initialize(name)
     @name = name
     self.balance(1000)
-    self.status(open)
+    self.status("open")
   end
 
   def status(status)
