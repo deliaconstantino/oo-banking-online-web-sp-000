@@ -7,7 +7,7 @@ class BankAccount
     self.status(open)
   end
 
-  def status(status)
+  def status(status = open, balance = 1000)
     @status = status
   end
 
