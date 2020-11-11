@@ -1,6 +1,6 @@
 class Transfer
 
-  def initialize(acct_a, acct_b, amount)
+  def initialize(sender, receiver, amount)
     
   end
 end
