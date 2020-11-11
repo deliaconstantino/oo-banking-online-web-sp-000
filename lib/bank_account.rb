@@ -6,16 +6,16 @@ class BankAccount
   def initialize(name)
     @name = name
     require 'pry'; binding.pry
-    self.balance=(1000)
-    self.status("open")
+    @balance = 1000
+    @status = "open"
   end
 
-  def status(current_status)
-    @status = current_status
-  end
-
-  def balance=(current_balance)
-    @balance = current_balance
-  end
+  # def status(current_status)
+  #   @status = current_status
+  # end
+  #
+  # def balance=(current_balance)
+  #   @balance = current_balance
+  # end
 
 end
