@@ -21,11 +21,9 @@ class Transfer
         @status = "complete"
       end
     elsif !self.valid?
-      # binding.pry
-      @status = "rejected"
-      # binding.pry
       value = "Transaction rejected. Please check your account balance."
-      value
+      @status = "rejected"
+      return value
     end
   end
 
