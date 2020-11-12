@@ -23,6 +23,7 @@ class Transfer
     else
       Binding.pry
       @status = "rejected"
+      Binding.pry
       return "Transaction rejected. Please check your account balance."
     end
   end
