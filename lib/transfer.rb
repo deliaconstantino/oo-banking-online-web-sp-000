@@ -15,6 +15,7 @@ class Transfer
   end
 
   def execute_transaction
+    require 'pry'; binding.pry
     if self.valid?
       if sender.balance >= amount && @status == "pending"
         sender.deposit(-amount) && receiver.deposit(amount)
@@ -25,5 +26,4 @@ class Transfer
       "Transaction rejected. Please check your account balance."
     end
   end
-
 end
