@@ -16,7 +16,7 @@ class Transfer
     if sender.balance >= amount
       sender.deposit(-amount) && receiver.deposit(amount)
       @status = "complete"
-    end
+    
   else
     "Transaction rejected. Please check your account balance."
   end
