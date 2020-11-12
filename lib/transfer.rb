@@ -20,7 +20,7 @@ class Transfer
         sender.deposit(-amount) && receiver.deposit(amount)
         @status = "complete"
       end
-    elsif 
+    else
       # binding.pry
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
