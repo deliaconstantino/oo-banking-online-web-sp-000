@@ -20,10 +20,10 @@ class Transfer
         sender.deposit(-amount) && receiver.deposit(amount)
         @status = "complete"
       end
-    elsif self.valid? != true
-      value = "Transaction rejected. Please check your account balance."
+    elsif 
+      # binding.pry
       @status = "rejected"
-      return value
+      "Transaction rejected. Please check your account balance."
     end
   end
 
